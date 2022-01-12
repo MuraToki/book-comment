@@ -43,9 +43,9 @@
   <form action="index.php" method="post">
     <p><?php echo $errors; ?></p>
     <h1><label>BOOK TITLE</label></h1>
-    <input type="text" name="booktitle" style="width: 230px; height: 30px;margin-top: 5px;" placeholder="タイトルを書いてね"><br>
+    <input type="text" name="booktitle" style="width: 230px; height: 30px;margin-top: 5px;" placeholder="タイトルを書いてね(10文字以内)"><br>
     <h1><label>BOOK COMMENT</label></h1>
-    <textarea name="text" id="" cols="45" rows="6" style="margin-top: 5px; margin-bottom: 5px;" placeholder="感想を自由に書いてね"></textarea><br>
+    <textarea name="text" id="" cols="45" rows="6" style="margin-top: 5px; margin-bottom: 5px;" placeholder="感想を自由に書いてね(100文字以内)"></textarea><br>
     <button type="submit" id="btn">投稿</button>
   </form>
 </div>
@@ -80,7 +80,7 @@
 
     $('#btn').click(function () {
     if (confirm("投稿しますか?")) {
-      return ture;
+      return true;
     } else {
       return false;
     }
